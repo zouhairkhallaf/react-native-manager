@@ -21,4 +21,6 @@ react-native run-ios
 
 use the debugger to debugg redux by running follow the steps her https://www.youtube.com/watch?v=JY279kbJ0KM: 
 
+npm install --save-dev redux-devtools-extension
+
 brew update && brew cask install react-native-debugger
