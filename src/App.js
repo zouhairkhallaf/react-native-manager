@@ -3,8 +3,8 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers  from './reducers';
 import firebase from 'firebase';
-import LoginForm from './components/LoginForm'
-import { Header } from './components/common/Header'
+import LoginForm from './components/LoginForm';
+import { Header } from './components/common/Header';
 
 class App extends Component {
     componentWillMount(){
