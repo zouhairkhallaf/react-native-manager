@@ -18,3 +18,7 @@ Make sure you have X-code installed then run the folowing commands:
 npm install
 
 react-native run-ios
+
+use the debugger to debugg redux by running follow the steps her https://www.youtube.com/watch?v=JY279kbJ0KM: 
+
+brew update && brew cask install react-native-debugger
