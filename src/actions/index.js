@@ -1,5 +1,5 @@
 import firebase from 'firebase';
-
+import { Actions } from 'react-native-router-flux';
 import { 
     EMAIL_CHANGED, 
     PASSWORD_CHANGED,
@@ -40,5 +40,17 @@ export const loginUser = (email, password) => {
 }
 
 
-const logInUserfail     = (dispatch      ) => {dispatch({type: LOGIN_USER_FAIL                  })}
-const logInUserSuccess  = (dispatch, user) => {dispatch({type: LOGIN_USER_SUCCESS, payload: user})}
+const logInUserfail = (dispatch) => {
+    dispatch({
+        type: LOGIN_USER_FAIL
+    })
+}
+
+const logInUserSuccess = (dispatch, user) => {
+    dispatch({
+        type: LOGIN_USER_SUCCESS, 
+        payload: user
+    });
+
+    Actions.main(); // employeeList is a Scene key
+}
