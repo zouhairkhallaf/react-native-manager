@@ -1,1 +1,0 @@
-export default () => null; // This is the initial substate for this reducer
